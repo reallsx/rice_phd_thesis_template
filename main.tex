@@ -1,0 +1,77 @@
+\documentclass[letterpaper,12pt,twoside]{ruthesis}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{theorem}
+\usepackage{xcolor}
+\newtheorem{proposition}{Proposition}
+
+
+\usepackage[style=nature,sorting=none]{biblatex}
+\addbibresource{report_bibliography.bib}
+
+
+\theoremheaderfont{\itshape} \theoremstyle{break}
+
+\title{Some Research Project That Nobody Else Cares About But You Have to Finish to Graduate}
+\ctitle{The title of this report}
+\author{Graduate Student}
+\school{Rice University}
+\department{Physics and Astronomy}
+\degree{Doctor of Philosophy}
+
+\committee {
+        Your Boss \\
+        Professor of Some Principle \and
+        Someone Else \\
+        J.S. Bach Professor of Some Principle \and
+        Another Person\\
+        Associate Professor of Some Principle \and
+        Fourth Member\\
+        Assistant Professor of Some Other Principle
+}
+
+\address{Houston, Texas}
+\donemonth{August} \doneyear{2021} \makeindex
+
+\begin{document}
+
+\begin{frontmatter}
+\pagenumbering{roman}
+\maketitle
+\begin{abstract}
+    Main text of abstract.
+\end{abstract}
+% \acknowledge
+% \include{acknowledge.tex}
+\begin{acknowledge}
+    We all deserve this. 
+\end{acknowledge}
+\tableofcontents
+\end{frontmatter}
+  
+  
+\pagenumbering{arabic}
+
+\linespacing{1.5}
+
+\include{chapters/1-intro.tex}
+
+\chapter{The Experiment}
+
+\chapter{Signal Reconstruction of the Experiment}
+
+\chapter{Something else of the Experiment}
+
+\chapter{Search for something in data from the Experiment}
+
+\chapter{Future of the Experiment}
+
+\linespacing{1.}
+
+\nocite{*}
+
+\printbibliography
+
+\end{document}
